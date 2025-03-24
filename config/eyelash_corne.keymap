@@ -50,6 +50,25 @@
         tap-ms = <100>;
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        qw_escape {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+        };
+
+        shift_z_hangul {
+            bindings = <&kp LANG_HANGEUL>;
+            key-positions = <28 29>;
+        };
+
+        asd_caps {
+            bindings = <&kp CAPS>;
+            key-positions = <14 15 16>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
